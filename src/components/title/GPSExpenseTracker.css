@@ -1,0 +1,100 @@
+div p {
+  color: #1a1818;
+  font-family: Avenir Next, Helvetica Neue, Helvetica, Tahoma, sans-serif;
+  font-size: 1em;
+  /* font-weight: 700; */
+}
+div p span {
+  display: inline-block;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 500;
+  -webkit-font-smoothing: antialiased;
+}
+div p span::before,
+div p span::after {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -1px;
+  transform-origin: left top;
+  transition: all ease-out 0.3s;
+  content: attr(data-text);
+}
+div p span::before {
+  z-index: 1;
+  color: rgba(0, 0, 0, 0.2);
+  transform: scale(1.1, 1) skew(0deg, 20deg);
+}
+div p span::after {
+  z-index: 2;
+  color: #ffffff;
+
+  /* text-shadow: 25px 0 10px #684da3, 1px 0 1px rgba(0,0,0,0.8); */
+  transform: rotateY(-4deg);
+}
+div p span:hover::before {
+  transform: scale(1.1, 1) skew(0deg, 5deg);
+}
+div p span:hover::after {
+  transform: rotateY(-10deg);
+}
+div p span + span {
+  margin-left: 0.1em;
+}
+@media (max-width: 200em) {
+  div p {
+    font-size: 250%;
+  }
+  div p span::before,
+  div p span::after {
+    display: block;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  div p {
+    font-size: 0rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+  div p {
+    font-size: 200%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+  div p {
+    font-size: 200%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+  div p {
+    font-size: 300%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  div p {
+    font-size: 400%;
+  }
+}
+.div {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #684da3; */
+  /* -----------------------Visualize the AREA--------------------------- */
+  /* border: 0.5rem solid;
+  border-color: black; */
+}
