@@ -1,11 +1,39 @@
-.Videos_border {
+/* .Videos_border {
     border: 0.5rem solid;
     border-color: rgb(110, 226, 43);
     border-radius: 2rem;
-  }
-.Videos{
-    /* margin-top: 10rem; */
+  } */
+.demo {
+  width: 100%;
+  /* display: flex; */
+  /* position: absolute; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  border-radius: 2rem;
+}
 
-    width: 100%;
-    height: 100%;
+.crop-container {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0;
+  position: relative;
+  border-radius: 2rem;
+}
+
+.crop-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+}
+
+.aspect-ratio-16x9 {
+  padding-top: calc(9 / 16 * 100%);
+}
+
+.aspect-ratio-4x3 {
+  padding-top: calc(3 / 4 * 100%);
 }

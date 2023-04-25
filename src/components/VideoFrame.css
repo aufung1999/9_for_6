@@ -41,11 +41,22 @@
   height: 100%;
 }
 /* ======================================================================================================== */
+.expandBtn{
+  /* height: 100%; */
+  /* position: absolute; */
+  z-index: 1;
+  /* width: 100%; */
+  font-size: 2rem;
+  background-color: rgb(94, 88, 88);
+}
 .expandPos {
   /* top: 2rem; */
   /* left: 20rem; */
   margin: 5rem;
-  position: fixed;
+  position: absolute;
+
+  z-index: 1;
+
 
   /* width: 100%; */
   /* height: 100%; */

@@ -12,27 +12,30 @@ export default function VideoFrame() {
   return (
     <div className="videoFrame">
       {/* <div className="whitePlane whitePlane_border">VideoFrame</div> */}
-      <div className="selections whitePlane_border">
-        <IconButton
-          onClick={() => setOpen(!open)}
-          aria-label="expand"
-          size="small"
-        >
-          Expand
-        </IconButton>
+      <div className="selections ">
+        <div>
+          <IconButton
+            onClick={() => setOpen(!open)}
+            aria-label="expand"
+            size="small"
+          >
+            <div  className="expandBtn">Expand</div>
+          </IconButton>
+        </div>
         <Collapse
-          className="expandPos whitePlane_border"
-          orientation={matches?"vertical":"horizontal"} //DYNAMIC Conditional style
+          className="expandPos "
+          orientation={matches ? "vertical" : "horizontal"} //DYNAMIC Conditional style
           in={open}
           timeout="auto"
           unmountOnExit
         >
-        {console.log('matches: ' + matches)}
+          {console.log("matches: " + matches)}
           <GroupOrientation />
         </Collapse>
 
         <Videos />
       </div>
+      <div className="whitePlane_border">DownLoad</div>
       <div className="whitePlane_border">DownLoad</div>
     </div>
   );

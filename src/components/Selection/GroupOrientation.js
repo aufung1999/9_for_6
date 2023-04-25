@@ -12,33 +12,24 @@ export default function GroupOrientation() {
   const buttons = [
     <Button
       className="button_Size"
-      onClick={() =>
-        dispatch({ type: "Select a Video", payload: "Full-Video" })
-      }
-      key="one"
-    >
-      <div className="button_fontStyle">Full Video</div>
-    </Button>,
-    <Button
-      className="button_Size"
       onClick={() => dispatch({ type: "Select a Video", payload: "Location" })}
       key="two"
     >
-      <div className="button_fontStyle">1. Location</div>
+      <div className="button_fontStyle">1. Nearby Shops</div>
     </Button>,
     <Button
       className="button_Size"
       onClick={() => dispatch({ type: "Select a Video", payload: "Record" })}
       key="three"
     >
-      <div className="button_fontStyle">2. Record</div>
+      <div className="button_fontStyle">2. Locations</div>
     </Button>,
     <Button
       className="button_Size"
       onClick={() => dispatch({ type: "Select a Video", payload: "Bill" })}
       key="four"
     >
-      <div className="button_fontStyle">3. Bill</div>
+      <div className="button_fontStyle">3. Bills</div>
     </Button>,
     <Button
       className="button_Size"
@@ -59,9 +50,9 @@ export default function GroupOrientation() {
       }}
     >
       <ButtonGroup
-        style={{
-          border: "0.5rem solid",
-        }}
+        // style={{
+        //   border: "0.5rem solid",
+        // }}
         className="buttonsGroup"
         orientation="vertical"
         aria-label="vertical contained button group"
