@@ -7,6 +7,8 @@ import bill from "../../videos/bills_e.mp4";
 import statistics_e from "../../videos/statistics_e.mp4";
 import { useSelector } from "react-redux";
 
+// import tape from "../../pictures/tape.png";
+
 export default function Videos() {
   const whichVideo = useSelector((state) => state.whichVideo);
 
@@ -28,7 +30,8 @@ export default function Videos() {
   }, [whichVideo]);
 
   return (
-    <div className="demo">
+    <div className="demo Videos_border">
+
       <div className="crop-container aspect-ratio-16x9">
         <video
           id="the-video"

@@ -1,15 +1,20 @@
-/* .Videos_border {
+.Videos_border {
     border: 0.5rem solid;
     border-color: rgb(110, 226, 43);
     border-radius: 2rem;
-  } */
+  }
 .demo {
-  width: 100%;
+  width: 80%;
   /* display: flex; */
   /* position: absolute; */
   /* align-items: center; */
   /* justify-content: center; */
   border-radius: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
 }
 
 .crop-container {
@@ -37,3 +42,13 @@
 .aspect-ratio-4x3 {
   padding-top: calc(3 / 4 * 100%);
 }
+
+/* =========================================================================== */
+.tape {
+  /* margin-left: 10rem; */
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  z-index: 1;
+}
+/* =========================================================================== */

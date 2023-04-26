@@ -32,35 +32,164 @@
 .selections {
   /* UNChANGE */
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 
-  margin: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 
   width: 100%;
   height: 100%;
 }
 /* ======================================================================================================== */
-.expandBtn{
-  /* height: 100%; */
-  /* position: absolute; */
-  z-index: 1;
-  /* width: 100%; */
-  font-size: 2rem;
-  background-color: rgb(94, 88, 88);
+
+/* CSS */
+.button-29 {
+  margin-right: 3rem;
+
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5adaff 0,
+    #5468ff 100%
+  );
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
 }
-.expandPos {
-  /* top: 2rem; */
-  /* left: 20rem; */
-  margin: 5rem;
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.button-red-color {
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #ff5a5a 0,
+    #ff9854 100%
+  );
+  box-shadow: rgba(66, 53, 35, 0.4) 0 2px 4px,
+    rgba(66, 53, 35, 0.3) 0 7px 13px -3px, rgba(111, 73, 58, 0.5) 0 -3px 0 inset;
+}
+.button-red-color:focus {
+  box-shadow: #e0783c 0 0 0 1.5px inset, rgba(66, 45, 35, 0.4) 0 2px 4px,
+    rgba(66, 54, 35, 0.3) 0 7px 13px -3px, #e0553c 0 -3px 0 inset;
+}
+
+.button-red-color:hover {
+  box-shadow: rgba(66, 45, 35, 0.4) 0 4px 8px,
+    rgba(66, 45, 35, 0.3) 0 7px 13px -3px, #e07e3c 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-red-color:active {
+  box-shadow: #e0933c 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.button-yellow-color {
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #fffea6 0,
+    #fbff00 100%
+  );
+  box-shadow: rgba(66, 66, 35, 0.4) 0 2px 4px,
+    rgba(58, 66, 35, 0.3) 0 7px 13px -3px,
+    rgba(101, 111, 58, 0.5) 0 -3px 0 inset;
+}
+.button-yellow-color:focus {
+  box-shadow: #e0d53c 0 0 0 1.5px inset, rgba(60, 66, 35, 0.4) 0 2px 4px,
+    rgba(54, 66, 35, 0.3) 0 7px 13px -3px, #c2e03c 0 -3px 0 inset;
+}
+
+.button-yellow-color:hover {
+  box-shadow: rgba(66, 66, 35, 0.4) 0 4px 8px,
+    rgba(61, 66, 35, 0.3) 0 7px 13px -3px, #dde03c 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-yellow-color:active {
+  box-shadow: #e0d53c 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.button-green-color {
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #bbffa6 0,
+    #00ff2a 100%
+  );
+  box-shadow: rgba(40, 66, 35, 0.4) 0 2px 4px,
+    rgba(38, 66, 35, 0.3) 0 7px 13px -3px, rgba(62, 111, 58, 0.5) 0 -3px 0 inset;
+}
+.button-green-color:focus {
+  box-shadow: #41e03c 0 0 0 1.5px inset, rgba(35, 66, 38, 0.4) 0 2px 4px,
+    rgba(35, 66, 37, 0.3) 0 7px 13px -3px, #3ce04a 0 -3px 0 inset;
+}
+
+.button-green-color:hover {
+  box-shadow: rgba(35, 66, 38, 0.4) 0 4px 8px,
+    rgba(36, 66, 35, 0.3) 0 7px 13px -3px, #57e03c 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-green-color:active {
+  box-shadow: #4fe03c 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+/* ======================================================================================================== */
+.videoContainer {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+.videoContainer_tape {
+  /* margin-left: 10rem; */
+  top: 10%;
+  right: 10%;
   position: absolute;
-
   z-index: 1;
-
-
-  /* width: 100%; */
-  /* height: 100%; */
 }
+
 /* ======================================================================================================== */
 @media screen and (max-width: 600px) {
   .videoFrame {
@@ -69,33 +198,73 @@
   }
 
   .selections {
-    /* UNChANGE */
-    /* display: flex; */
     flex-direction: column;
-    /* justify-content: flex-start;
-    align-items: center; */
 
-    /* margin: 2rem;
-
-    width: 100%;*/
     height: 100%;
+  }
+  .videoContainer_tape {
+    display: none;
+    top: 45%;
+    right: 10%;
+    position: absolute;
+    z-index: 1;
+    width: 20%;
+  }
+  .button-alignment {
+    display: grid;
+    grid-template-columns: auto auto;
+
+  }
+  .button-29 {
+    margin: 1rem;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+  .videoContainer_tape {
+    /* margin-left: 10rem; */
+    display: none;
+    top: 45%;
+    right: 10%;
+    position: absolute;
+    z-index: 1;
+    width: 20%;
+  }
+  .button-29 {
+    margin-right: 1rem;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .videoContainer_tape {
+    /* margin-left: 10rem; */
+    top: 35%;
+    right: 10%;
+    position: absolute;
+    z-index: 1;
+    width: 20%;
+  }
+  .button-29 {
+    margin: 0rem;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
   .expandPos {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .videoContainer_tape {
+    /* margin-left: 10rem; */
+    top: 25%;
+    right: 10%;
+    position: absolute;
+    z-index: 1;
+    width: 20%;
   }
 }
 
@@ -106,5 +275,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .videoContainer_tape {
+    /* margin-left: 10rem; */
+    top: 15%;
+    right: 10%;
+    position: absolute;
+    z-index: 1;
+    width: 20%;
   }
 }
