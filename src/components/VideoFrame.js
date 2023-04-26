@@ -13,6 +13,8 @@ import Introduction from "./Introduction/Introduction";
 import Function from "./Function/Function";
 import Download from "./Download/Download";
 
+import TrackVisibility from "react-on-screen";
+
 export default function VideoFrame() {
   const [open, setOpen] = useState(false);
   const matches = useMediaQuery("(max-width:600px)"); // TO see if the media is MAX 600 px in .js file, NOT .css
@@ -27,7 +29,7 @@ export default function VideoFrame() {
       </div>
       <div className="how_to_achieve">Functions</div>
 
-      <div className="selections ">
+      <div className="selections">
         <div className="button-alignment">
           <button
             className="button-29"
@@ -62,6 +64,7 @@ export default function VideoFrame() {
             <div>Statistic</div>
           </button>
         </div>
+
         <Collapse
           className=" "
           orientation={matches ? "vertical" : "horizontal"} //DYNAMIC Conditional style
@@ -73,15 +76,53 @@ export default function VideoFrame() {
           <GroupOrientation />
         </Collapse>
       </div>
+
       <div className="videoContainer ">
         <img className="videoContainer_tape " src={tape} alt="Logo" />
         <Videos />
       </div>
+
+      <div className="selections">
+        <div className="button-alignment">
+          <button
+            className="button-29"
+            onClick={() =>
+              dispatch({ type: "Select a Video", payload: "Location" })
+            }
+          >
+            <div>Nearby Shops</div>
+          </button>
+          <button
+            className="button-29 button-red-color"
+            onClick={() =>
+              dispatch({ type: "Select a Video", payload: "Record" })
+            }
+          >
+            <div>Locations</div>
+          </button>
+          <button
+            className="button-29 button-yellow-color"
+            onClick={() =>
+              dispatch({ type: "Select a Video", payload: "Bill" })
+            }
+          >
+            <div>Bills</div>
+          </button>
+          <button
+            className="button-29 button-green-color"
+            onClick={() =>
+              dispatch({ type: "Select a Video", payload: "Statistic" })
+            }
+          >
+            <div>Statistic</div>
+          </button>
+        </div>
+      </div>
+      
       <div className="how_to_achieve">How to achieve?</div>
       <div className="Function_Area">
         <Function />
       </div>
-
       <div className="how_to_achieve">Download</div>
       <Download />
     </div>
