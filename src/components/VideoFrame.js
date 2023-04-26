@@ -8,9 +8,9 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useDispatch } from "react-redux";
 
 import tape from "../pictures/tape.png";
-import memo from "../pictures/memo.png";
 
 import Introduction from "./Introduction/Introduction";
+import Function from "./Function/Function";
 
 export default function VideoFrame() {
   const [open, setOpen] = useState(false);
@@ -21,12 +21,11 @@ export default function VideoFrame() {
   return (
     <div className="videoFrame">
       <div className="whitePlane whitePlane_border">VideoFrame</div>
-      <div className="whitePlane_border">
-
-        <Introduction/>
+      <div className="Introduction_Area">
+        <Introduction />
       </div>
-      <div className="whitePlane_border">
-        <img className=" " src={memo} alt="Logo" />
+      <div className="Function_Area">
+        <Function />
       </div>
       <div className="selections ">
         <div className="button-alignment">

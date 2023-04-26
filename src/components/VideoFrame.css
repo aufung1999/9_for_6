@@ -13,7 +13,22 @@
 }
 
 /* ======================================================================================================== */
+.Introduction_Area {
+  width: 100%;
+  height: 100%;
+  /* display: block; */
+  margin: 2rem;
+}
+.Function_Area {
+  width: 100%;
+  height: 100%;
+  margin: 2rem;
 
+  display: flex;
+  justify-content: center;
+
+  border: 0.5rem red solid;
+}
 /* ======================================================================================================== */
 .whitePlane {
   /* UNChANGE */
@@ -182,13 +197,6 @@
   display: flex;
   justify-content: center;
 }
-.videoContainer_tape {
-  /* margin-left: 10rem; */
-  top: 10%;
-  right: 10%;
-  position: absolute;
-  z-index: 1;
-}
 
 /* ======================================================================================================== */
 @media screen and (max-width: 600px) {
@@ -204,7 +212,7 @@
   }
   .videoContainer_tape {
     display: none;
-    top: 45%;
+    /* top: 45%; */
     right: 10%;
     position: absolute;
     z-index: 1;
@@ -213,7 +221,6 @@
   .button-alignment {
     display: grid;
     grid-template-columns: auto auto;
-
   }
   .button-29 {
     margin: 1rem;
@@ -224,7 +231,7 @@
   .videoContainer_tape {
     /* margin-left: 10rem; */
     display: none;
-    top: 45%;
+    /* top: 45%; */
     right: 10%;
     position: absolute;
     z-index: 1;
@@ -239,7 +246,7 @@
 @media only screen and (max-width: 992px) and (min-width: 768px) {
   .videoContainer_tape {
     /* margin-left: 10rem; */
-    top: 35%;
+    /* top: 35%; */
     right: 10%;
     position: absolute;
     z-index: 1;
@@ -260,7 +267,7 @@
   }
   .videoContainer_tape {
     /* margin-left: 10rem; */
-    top: 25%;
+    /* top: 25%; */
     right: 10%;
     position: absolute;
     z-index: 1;
@@ -278,10 +285,10 @@
   }
   .videoContainer_tape {
     /* margin-left: 10rem; */
-    top: 15%;
+    /* top: 15%; */
     right: 10%;
     position: absolute;
     z-index: 1;
-    width: 20%;
+    /* width: 20%; */
   }
 }
