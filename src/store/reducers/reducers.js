@@ -3,7 +3,7 @@ import { combineReducers } from "redux";
 
 //######################################################################################################
 
-const whichVideoReducer = (state = null, action) => {
+const whichVideoReducer = (state = "Location", action) => {
   switch (action.type) {
     case "Select a Video":
       return action.payload;

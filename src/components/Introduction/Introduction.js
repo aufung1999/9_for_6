@@ -6,13 +6,13 @@ function Introduction() {
   return (
     <div className={styles.Intro_Container}>
       <article className={styles.article}>
-        <picture className={styles.image}>
+        <div className={styles.image}>
           <img src={introduction} alt="background " />
-        </picture>
+        </div>
         <div className={styles.testInsideImg}>
-          GPS Expense Tracker
-          <div className={styles.border}>
-            <div className={styles.testInsideImg_prefix}>Use</div>
+          <div className={styles.header}>GPS Expense Tracker</div>
+          <div className={styles}>
+            {/* <div className={styles.testInsideImg_prefix}>Use</div> */}
             <div className={styles.testInsideImg_suffix}>
               It records the locations where require you to spend moeny. To
               achieve this, it will use the GPS of the mobile device and use

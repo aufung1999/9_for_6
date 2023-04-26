@@ -11,6 +11,7 @@ import tape from "../pictures/tape.png";
 
 import Introduction from "./Introduction/Introduction";
 import Function from "./Function/Function";
+import Download from "./Download/Download";
 
 export default function VideoFrame() {
   const [open, setOpen] = useState(false);
@@ -20,13 +21,12 @@ export default function VideoFrame() {
 
   return (
     <div className="videoFrame">
-      <div className="whitePlane whitePlane_border">VideoFrame</div>
+      <div className="how_to_achieve">Introduction</div>
       <div className="Introduction_Area">
         <Introduction />
       </div>
-      <div className="Function_Area">
-        <Function />
-      </div>
+      <div className="how_to_achieve">Functions</div>
+
       <div className="selections ">
         <div className="button-alignment">
           <button
@@ -77,8 +77,13 @@ export default function VideoFrame() {
         <img className="videoContainer_tape " src={tape} alt="Logo" />
         <Videos />
       </div>
+      <div className="how_to_achieve">How to achieve?</div>
+      <div className="Function_Area">
+        <Function />
+      </div>
 
-      <div className="whitePlane_border">DownLoad</div>
+      <div className="how_to_achieve">Download</div>
+      <Download />
     </div>
   );
 }

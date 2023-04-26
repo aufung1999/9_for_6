@@ -1,0 +1,40 @@
+.downloadBox {
+  /* width: 80%; */
+
+  margin: 5rem;
+
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+
+  border: 0.5rem white solid;
+  border-radius: 2rem;
+
+  background-color: rgb(63, 241, 63);
+}
+
+.table {
+  max-width: 90%;
+  display: flex;
+}
+
+.col {
+  /* max-width: 100%; */
+  /* border: 0.5rem black solid; */
+  margin: 1rem;
+}
+
+.col img {
+  width: 8rem;
+}
+
+.col a {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 3rem;
+  font-family: fantasy;
+  /* border: 0.5rem black solid; */
+}
